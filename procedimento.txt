@@ -1,0 +1,7 @@
+npm init -y
+npm i -D typescript @types/node tsup
+npx tsc --init
+npm i fastify
+npm i -D prisma
+npm i @prisma/client
+npx prisma init
