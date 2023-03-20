@@ -2,7 +2,8 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider   = "prisma-client-js"
+  engineType = "binary"
 }
 
 datasource db {
@@ -11,8 +12,9 @@ datasource db {
 }
 
 model User {
-  id String @id @default(cuid())
-  name String
-  email String
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  matricula String
   createdAt DateTime @default(now())
 }

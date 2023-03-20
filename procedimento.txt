@@ -4,4 +4,6 @@ npx tsc --init
 npm i fastify
 npm i -D prisma
 npm i @prisma/client
-npx prisma init
+npx prisma init (cria a configuracao do prisma)
+configurar schema do prisma
+npx prisma migrate dev (para levar as modificacoes do schema para o banco de dados)
